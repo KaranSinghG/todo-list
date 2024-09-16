@@ -1,3 +1,12 @@
 export default function InputItem() {
-  return <div>item</div>;
+  function handleAdd() {
+    console.log("Add Clicked");
+  }
+
+  return (
+    <div>
+      <input></input>
+      <button onClick={handleAdd}>Add</button>
+    </div>
+  );
 }
